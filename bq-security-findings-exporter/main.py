@@ -54,3 +54,8 @@ def export_bq_to_csv(request):
     )
 
     return f"CSV exported to gs://{bucket_name}/{file_name}"
+
+
+if __name__ == "__main__":
+    result = export_bq_to_csv(None)
+    print(result)
